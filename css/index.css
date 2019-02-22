@@ -785,6 +785,16 @@ li #mainItem:hover{
     border-top: 1px solid #ffac13;
     margin-bottom: 14px;
     background: #fff;
+    position: relative;
+    top: 0;
+    transition: all 0.8s;
+}
+.substanceItem:hover{
+    box-shadow: 0 5px 15px #333;
+    top: -5px;
+}
+.substanceItem:hover .arrow{
+    opacity: 1;
 }
 .substanceContent .substanceItem:hover{
     transition: all .2s linear;
@@ -857,6 +867,30 @@ li #mainItem:hover{
 .pages .page:hover{
     background: #ff6700;
 }
+.substanceItem .arrow{
+    width: 20px;
+    height: 24px;
+    padding: 12px 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: iconfont;
+    background: rgba(66,66,66,0.2);
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 165px;
+    opacity: 0;
+}
+.arrow:hover{
+    background: #b0b0b0;
+}
+.substanceItem .leftArrow{
+    left: 0;
+}
+.substanceItem .rightArrow{
+    right: 0;
+}
 /*视频*/
 #main .video{
     width: 1226px;
@@ -876,7 +910,10 @@ li #mainItem:hover{
     color: #424242;
     font-family: iconfont;
 }
-.all a:hover{
+.all a i{
+    color: #b0b0b0;
+}
+.all a:hover i{
     color: #ff6700;
 }
 .video .videoList{
