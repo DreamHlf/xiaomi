@@ -593,6 +593,39 @@ ul.aslide{
     background: #fff;
     position: relative;
 }
+.contentBox li:hover .review-wrapper{
+    opacity: 1;
+    transition: all 0.8s linear;
+}
+li .review-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 234px;
+    height: 57px;
+    overflow: hidden;
+    font-size: 12px;
+    background: #ff6700;
+    opacity: 0;
+}
+li .review-wrapper a {
+    width: 174px;
+    height: 57px;
+    display: block;
+    padding: 0 30px;
+    color: #757575;
+    text-decoration: none;
+}
+.review-wrapper a .review {
+    margin-top: -11px;
+    color: #fff;
+}
+.review-wrapper a .author{
+    color: rgba(255,255,255,0.6);
+}
+.review-wrapper a .review, .review-wrapper a .author {
+    display: block;
+}
 .contentBox li a img{
     width: 150px;
     height: 150px;
